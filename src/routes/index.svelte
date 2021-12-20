@@ -1,2 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main>
+	<h1 class="text-2xl font-bold text-center text-grey-800 md:text-3xl">Mes tâches</h1>
+</main>
