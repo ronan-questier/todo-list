@@ -1,9 +1,17 @@
-<form action="submit" class="my-6">
+<script>
+	let todo = '';
+
+	const handleSubmit = () => {
+		console.info('Nouvelle tache ajoutée !');
+	};
+</script>
+
+<form on:submit|preventDefault={handleSubmit} class="my-6">
 	<div class="flex flex-col text-sm mb-2">
 		<input
 			type="text"
 			name="todo"
-			id=""
+			bind:value={todo}
 			placeholder="Nouvelle note..."
 			class="appearance-none shadow-sm border border-grey-200 p-2 focus:outlined-none focus:border-grey-500 rounded-lg"
 		/>
