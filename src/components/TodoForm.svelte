@@ -1,7 +1,11 @@
 <script>
+	import { addTodo } from '../stores/TodoStore';
+
 	let todo = '';
 
 	const handleSubmit = () => {
+		addTodo(todo);
+		todo = '';
 		console.info('Nouvelle tache ajoutée !');
 	};
 </script>
@@ -12,6 +16,7 @@
 			type="text"
 			name="todo"
 			bind:value={todo}
+			autocomplete="off"
 			placeholder="Nouvelle note..."
 			class="appearance-none shadow-sm border border-grey-200 p-2 focus:outlined-none focus:border-grey-500 rounded-lg"
 		/>
