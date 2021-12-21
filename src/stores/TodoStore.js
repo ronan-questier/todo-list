@@ -17,7 +17,7 @@ export const addTodo = (text) => {
 };
 
 export const deleteTodo = (id) => {
-	todos.update((todo) => todo.id != id);
+	todos.update((todos) => todos.filter((todo) => todo.id !== id));
 };
 
 export const toggleTodoCompleted = (id) => {
